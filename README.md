@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# Hackathon
-=======
+
 # ChurnSense 📈
 An AI-powered customer churn prediction and retention platform that detects at-risk customers using behavior and transaction data, explains the causes, and recommends actions to retain them.
 
