@@ -1,0 +1,101 @@
+customer_id,region,plan_type,total_spend,churn_probability,risk_level,priority_score,churn_reasons
+CUST-0001,Asia,Enterprise,3012.3438580767524,0.5294636848838125,Medium risk,0.5940470929462773,Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0002,South America,Pro,879.1270927275638,0.6516285961118937,Medium risk,18.8737091432303,Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0003,North America,Enterprise,3597.31444329082,0.33952403495589,Medium risk,11.343804196315734,Payment friction risk; Subscription expired
+CUST-0004,Asia,Enterprise,860.3015799039283,0.564458322530571,Medium risk,35.902905638335504,Dissatisfaction risk (high refunds); Payment friction risk; Subscription expired
+CUST-0005,Asia,Pro,803.216496621483,0.6474559828004409,Medium risk,36.738677545410084,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0006,South America,Enterprise,194.3711879999748,0.28794713799513344,Low risk,5.94360533938114,Dissatisfaction risk (high refunds)
+CUST-0007,North America,Basic,1914.664433184497,0.6256341665203924,Medium risk,4.927660898720869,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0008,North America,Basic,2281.1224763873347,0.7532075575700999,High risk,75.23922721839705,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0009,Asia,Basic,309.5491257419919,0.6055699610873365,Medium risk,2.6892177690182266,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0010,Europe,Basic,3113.334085945292,0.4353969841466307,Medium risk,2.513629288692669,High inactivity (last login > 30 days)
+CUST-0011,Asia,Basic,1840.490897254709,0.34473517974192375,Medium risk,3.596296714082258,No critical risk factors identified
+CUST-0012,Asia,Basic,2121.341563843941,0.3918301548865449,Medium risk,2.041216977870151,Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0013,Asia,Enterprise,1791.0128504060012,0.4071679659833614,Medium risk,4.550749064322948,Payment friction risk
+CUST-0014,Asia,Basic,1633.0140904575376,0.3975447107427596,Medium risk,15.695847437743737,Dissatisfaction risk (high refunds)
+CUST-0015,South America,Basic,2260.5793086674607,0.5989298292086198,Medium risk,24.129673131888598,High inactivity (last login > 30 days); Payment friction risk; Subscription expired
+CUST-0016,North America,Pro,663.1989714263144,0.35122687696449967,Medium risk,28.41676330012819,Dissatisfaction risk (high refunds)
+CUST-0017,South America,Basic,768.6161154563209,0.22065658341613786,Low risk,0.8114496141751815,Dissatisfaction risk (high refunds)
+CUST-0018,South America,Enterprise,3454.0532030033933,0.3108564138140962,Medium risk,5.797710271909809,Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0019,South America,Basic,3787.1560754278494,0.26026111836357746,Low risk,13.131551938740447,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds)
+CUST-0020,Asia,Enterprise,1524.571799305024,0.717585074392001,High risk,11.468279389385101,High inactivity (last login > 30 days); Payment friction risk
+CUST-0021,Europe,Pro,1119.4414589170374,0.5488502960100364,Medium risk,6.9693686616702655,Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0022,North America,Basic,2593.7981957941124,0.4909372742025389,Medium risk,29.60308885542698,Subscription expired
+CUST-0023,Europe,Basic,1664.4999758374809,0.4552096465698268,Medium risk,2.79363135536038,Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0024,South America,Enterprise,150.2761048583622,0.48772979097388475,Medium risk,16.80187785974784,High inactivity (last login > 30 days); Payment friction risk
+CUST-0025,South America,Pro,666.8027595964519,0.3312025991510383,Medium risk,4.3332524327283926,No critical risk factors identified
+CUST-0026,Europe,Pro,2878.09030394722,0.49472001491247647,Medium risk,2.47656400761679,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Subscription expired
+CUST-0027,Europe,Pro,2652.749570545098,0.43495930384581677,Medium risk,32.5418985052299,Dissatisfaction risk (high refunds); Payment friction risk; Subscription expired
+CUST-0028,Europe,Basic,157.02917038875978,0.4322721309985653,Medium risk,20.7599686004169,High inactivity (last login > 30 days); Subscription expired
+CUST-0029,South America,Basic,926.7900396351504,0.39839704990196745,Medium risk,1.7370793778555846,Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0030,South America,Basic,962.745446522882,0.42869706280194453,Medium risk,0.7246080720638581,Dissatisfaction risk (high refunds); Payment friction risk; Subscription expired
+CUST-0031,North America,Enterprise,2703.9763372149773,0.6248692189310656,Medium risk,1.8842362831828527,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds)
+CUST-0032,North America,Pro,127.8566241297384,0.27913860340129626,Low risk,3.592406571747218,No critical risk factors identified
+CUST-0033,South America,Basic,461.2288988390667,0.6849576749688315,Medium risk,10.466157539667797,Payment friction risk; Subscription expired
+CUST-0034,Europe,Basic,3209.668537224098,0.4933246941087563,Medium risk,10.061851375717696,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Subscription expired
+CUST-0035,Europe,Basic,755.2514151146178,0.3606743171295261,Medium risk,0.773537239178541,Dissatisfaction risk (high refunds); Low engagement duration
+CUST-0036,North America,Basic,2628.347126014905,0.3879500718392476,Medium risk,5.925702804374257,Dissatisfaction risk (high refunds)
+CUST-0037,South America,Pro,990.8219851345698,0.33422667650960824,Medium risk,8.581249876553931,Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0038,North America,Pro,442.7935013994134,0.47804745452125286,Medium risk,32.18567204441986,Dissatisfaction risk (high refunds)
+CUST-0039,North America,Enterprise,1010.5301544478436,0.5191140649602126,Medium risk,1.4172277437248624,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds)
+CUST-0040,Asia,Basic,2902.9543808298536,0.7116078911513892,High risk,20.360674052903704,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0041,Asia,Basic,3430.0010490198288,0.4347238485392569,Medium risk,7.720238864815056,Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0042,Asia,Pro,3329.3684650396167,0.4089199789157433,Medium risk,31.00133499686967,Dissatisfaction risk (high refunds); Subscription expired
+CUST-0043,Europe,Pro,1618.8749419928963,0.5990393678222844,Medium risk,22.67701801934403,Subscription expired
+CUST-0044,South America,Pro,2688.9362894540523,0.3880350947092753,Medium risk,8.972221692854083,Payment friction risk
+CUST-0045,South America,Pro,859.6879668924928,0.7687708156903159,High risk,28.665905445861544,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0046,South America,Basic,1207.9335345310024,0.7035516661850454,High risk,1.4127409754350146,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0047,South America,Pro,3590.526483158423,0.25689318538400563,Low risk,9.90572319112546,Dissatisfaction risk (high refunds)
+CUST-0048,Asia,Basic,101.35759786740736,0.3607639653113572,Medium risk,6.372846891804965,Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0049,Europe,Basic,387.7586968751489,0.36656781716623865,Medium risk,19.282647549377828,Dissatisfaction risk (high refunds)
+CUST-0050,Europe,Basic,871.1507078268079,0.4830823081402676,Medium risk,24.381130801639532,High inactivity (last login > 30 days); Subscription expired
+CUST-0051,Asia,Basic,154.8022053015879,0.4144801432432341,Medium risk,6.115591915838596,Dissatisfaction risk (high refunds); Payment friction risk; Subscription expired
+CUST-0052,Europe,Pro,766.6699686046994,0.43069396358447415,Medium risk,8.566421331931283,Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0053,Asia,Basic,2353.014165830284,0.5595896395144455,Medium risk,0.8539208587542546,Dissatisfaction risk (high refunds); Payment friction risk; Subscription expired
+CUST-0054,South America,Pro,1714.626974840367,0.5875440440491236,Medium risk,19.369254089452497,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0055,Asia,Enterprise,3576.0532587540506,0.4483709718921304,Medium risk,17.05196559022038,Dissatisfaction risk (high refunds); Payment friction risk; Subscription expired
+CUST-0056,South America,Basic,3278.902068866841,0.36319633173338417,Medium risk,8.342815731075223,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds)
+CUST-0057,South America,Basic,1400.17853920661,0.5385433593858445,Medium risk,0.3594243032773295,Dissatisfaction risk (high refunds); Low buying consistency
+CUST-0058,North America,Pro,1074.722562053605,0.5631154955513338,Medium risk,27.91622123759458,Payment friction risk
+CUST-0059,Asia,Basic,1549.7850122607042,0.35136844199302475,Medium risk,21.273313920259014,Dissatisfaction risk (high refunds)
+CUST-0060,North America,Basic,2381.6650229334905,0.2743054785187945,Low risk,7.189550440394079,Dissatisfaction risk (high refunds)
+CUST-0061,Asia,Basic,1108.851381250361,0.2749637404707206,Low risk,6.607248090946946,Dissatisfaction risk (high refunds); Subscription expired
+CUST-0062,Asia,Basic,2515.388186004079,0.6170045497049979,Medium risk,15.51527345749005,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds)
+CUST-0063,North America,Enterprise,1667.1760261553998,0.559544291365599,Medium risk,5.4685971662932555,High inactivity (last login > 30 days); Subscription expired
+CUST-0064,North America,Enterprise,2230.586364365322,0.5190217110178366,Medium risk,43.215085632871705,Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0065,Asia,Pro,1772.6997900845008,0.3026712288956466,Medium risk,12.281906368716264,Dissatisfaction risk (high refunds)
+CUST-0066,Europe,Enterprise,1213.139750190575,0.4712365233829708,Medium risk,8.561324794843362,Payment friction risk
+CUST-0067,South America,Enterprise,3796.390562500519,0.6349696760729929,Medium risk,3.1700758432449883,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0068,North America,Basic,3066.242886931055,0.37937822368134577,Medium risk,7.448852781881079,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds)
+CUST-0069,South America,Enterprise,603.4470442774875,0.6175953117486884,Medium risk,1.2473352074021793,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Low buying consistency
+CUST-0070,Europe,Pro,3480.4485047967555,0.36327957838982977,Medium risk,1.2348864144007339,Dissatisfaction risk (high refunds)
+CUST-0071,Europe,Enterprise,1975.353233085579,0.3060451098240396,Medium risk,1.401536859061108,No critical risk factors identified
+CUST-0072,Europe,Enterprise,3583.481296231661,0.7035807282463921,High risk,0.4538311442501384,High inactivity (last login > 30 days); Payment friction risk; Low buying consistency
+CUST-0073,North America,Basic,3209.428260991895,0.528474063534794,Medium risk,3.587717009310693,Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0074,Europe,Basic,1729.593342653472,0.45971592126238764,Medium risk,7.6839379084559125,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds)
+CUST-0075,North America,Basic,138.75376786446373,0.5192816729923881,Medium risk,6.569386208670508,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0076,Europe,Basic,1111.275569570537,0.40032608931853325,Medium risk,12.654391010976518,Dissatisfaction risk (high refunds); Payment friction risk; Subscription expired
+CUST-0077,South America,Enterprise,2189.4551479104243,0.44348137956807565,Medium risk,6.66880105184564,Dissatisfaction risk (high refunds); Payment friction risk; Subscription expired
+CUST-0078,South America,Enterprise,2552.238968313282,0.6451750713510079,Medium risk,3.6181980912571934,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0079,Asia,Basic,1068.6563574611491,0.3938321106382365,Medium risk,8.395885263593906,Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0080,South America,Pro,600.4564925876554,0.6182852141205594,Medium risk,25.301904562503534,High inactivity (last login > 30 days); Payment friction risk
+CUST-0081,Asia,Basic,3347.9744353572314,0.34048853575716553,Medium risk,1.0054978765665366,Dissatisfaction risk (high refunds); Low buying consistency
+CUST-0082,South America,Basic,3938.388613779031,0.4349533642015989,Medium risk,20.748884903702876,Dissatisfaction risk (high refunds)
+CUST-0083,North America,Basic,2126.476220095609,0.6089082878372599,Medium risk,3.9867926412853807,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0084,South America,Basic,728.1331791007988,0.474685633253125,Medium risk,7.614081183755315,Payment friction risk
+CUST-0085,Asia,Enterprise,1125.6139397515074,0.3091785517904487,Medium risk,5.611099245040692,No critical risk factors identified
+CUST-0086,Asia,Basic,122.6431723624936,0.5172537011911378,Medium risk,4.5591844617812205,High inactivity (last login > 30 days); Subscription expired
+CUST-0087,Europe,Pro,3661.480285913971,0.5085428819968116,Medium risk,27.402047751115564,Dissatisfaction risk (high refunds)
+CUST-0088,North America,Pro,515.1167774160574,0.5275348668790886,Medium risk,17.80226394352096,Dissatisfaction risk (high refunds)
+CUST-0089,South America,Basic,2327.240078281301,0.39187426610640186,Medium risk,1.1831989868791521,Payment friction risk; Low buying consistency
+CUST-0090,Europe,Enterprise,1132.5181217144636,0.5097225700750139,Medium risk,2.3089890599759917,High inactivity (last login > 30 days)
+CUST-0091,South America,Enterprise,2239.003109937384,0.5399213577686071,Medium risk,17.26946592166486,Dissatisfaction risk (high refunds); Payment friction risk; Subscription expired
+CUST-0092,South America,Basic,2623.110533989864,0.6584031630707707,Medium risk,6.346321543879295,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0093,Europe,Basic,3327.4801246434463,0.4130799457679495,Medium risk,21.372613320933866,Dissatisfaction risk (high refunds)
+CUST-0094,Europe,Basic,865.3640234543826,0.6289163878455954,Medium risk,8.779137176767868,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Low engagement duration
+CUST-0095,Europe,Basic,93.43352320099788,0.5085231651019387,Medium risk,2.039906603332063,Dissatisfaction risk (high refunds); Subscription expired
+CUST-0096,Europe,Basic,590.6982387717887,0.28704530770538383,Low risk,0.8239484305623435,Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0097,Europe,Pro,3605.073635300015,0.4320131995191682,Medium risk,0.22985532254641733,Payment friction risk
+CUST-0098,South America,Pro,3501.8658063719354,0.6308700269100889,Medium risk,52.746636264699035,Dissatisfaction risk (high refunds); Payment friction risk; Subscription expired
+CUST-0099,Europe,Basic,2409.7817535727177,0.48464844823677683,Medium risk,1.6831201816199821,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0100,North America,Basic,2422.041598712931,0.40219231477780804,Medium risk,9.32024897339405,Dissatisfaction risk (high refunds); Payment friction risk
