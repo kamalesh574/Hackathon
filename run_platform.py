@@ -17,7 +17,7 @@ def run():
     # 1. Start Backend (FastAPI)
     print("Starting Backend API (FastAPI) on port 8000...")
     backend_process = subprocess.Popen(
-        [python_cmd, "-m", "uvicorn", "backend.main:app", "--host", "127.0.0.1", "--port", "8000"],
+        [python_cmd, "-m", "uvicorn", "backend.main:app", "--host", "127.0.0.1", "--port", "8000", "--reload"],
         cwd=root_dir
     )
     

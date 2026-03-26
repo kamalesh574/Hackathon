@@ -232,65 +232,110 @@ const Dashboard = () => {
       </div>
 
       {/* DEEP TELEMETRY SECTION */}
-      {telemetry && (
+      {telemetry && telemetry.sentiment && (
         <div className="pt-10 animate-in slide-in-from-bottom duration-1000">
           <div className="mb-8">
-             <h2 className="text-3xl font-black text-slate-900 tracking-tight">Deep Behavioral & Transactional Telemetry</h2>
-             <p className="text-slate-500 mt-2 font-medium">Advanced psychological profiling and micro-financial friction matrices</p>
+             <h2 className="text-3xl font-black text-slate-900 tracking-tight">Enterprise Hyper-Telemetry Framework</h2>
+             <p className="text-slate-500 mt-2 font-medium">Advanced psychological profiling, sentiment topography, and micro-financial friction matrices</p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Behavioral Radar */}
+          <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
+            
+            {/* 1. Behavioral Engagement Radar */}
             <div className="bg-white border border-slate-200 p-8 rounded-[32px] shadow-sm hover:shadow-lg transition-shadow duration-300">
-              <h3 className="text-xl font-bold text-slate-900 mb-6">Behavioral Engagement Matrix</h3>
-              <div className="h-[380px]">
+              <h3 className="text-xl font-bold text-slate-900 mb-6 flex justify-between">Behavioral Engagement <span className="text-slate-400 text-xs mt-1 uppercase">Matrix</span></h3>
+              <div className="h-[280px]">
                 <ResponsiveContainer width="100%" height="100%">
-                  <RadarChart cx="50%" cy="50%" outerRadius="70%" data={telemetry.behavior.radar}>
+                  <RadarChart cx="50%" cy="50%" outerRadius="75%" data={telemetry.behavior.radar}>
                     <PolarGrid stroke="#e2e8f0" strokeWidth={1.5} />
-                    <PolarAngleAxis dataKey="subject" tick={{ fill: '#475569', fontSize: 12, fontWeight: 700 }} />
-                    <PolarRadiusAxis angle={30} domain={[0, 100]} tick={{ fill: '#94a3b8' }} axisLine={false} />
-                    <Radar name="Active Cohort Density" dataKey="A" stroke="#8b5cf6" strokeWidth={4} fill="#8b5cf6" fillOpacity={0.4} />
-                    <Tooltip contentStyle={{ borderRadius: '16px', border: '1px solid #e2e8f0', boxShadow: '0 20px 25px -5px rgba(0,0,0,0.1)' }} itemStyle={{fontWeight: 800, color: '#8b5cf6'}}/>
+                    <PolarAngleAxis dataKey="subject" tick={{ fill: '#475569', fontSize: 11, fontWeight: 700 }} />
+                    <Radar dataKey="A" name="Behavioral Score" stroke="#8b5cf6" strokeWidth={4} fill="#8b5cf6" fillOpacity={0.4} />
+                    <Tooltip contentStyle={{ borderRadius: '16px', border: '1px solid #e2e8f0', boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1)' }} itemStyle={{fontWeight: 800, color: '#8b5cf6'}}/>
                   </RadarChart>
                 </ResponsiveContainer>
               </div>
-              <div className="mt-6 flex justify-between items-center px-6 py-4 bg-slate-50 rounded-2xl border border-slate-100 shadow-inner">
-                 <span className="text-slate-500 font-bold text-xs uppercase tracking-widest">Avg Days Since Last Active (System Load)</span>
-                 <span className="text-slate-900 font-black text-2xl">{telemetry.behavior.last_active_avg_days} <span className="text-slate-400 text-base">Days</span></span>
+              <div className="mt-4 flex justify-between items-center px-5 py-4 bg-slate-50 rounded-2xl border border-slate-100">
+                 <span className="text-slate-500 font-bold text-[10px] uppercase text-left tracking-widest">Avg System Load Idle Time</span>
+                 <span className="text-slate-900 font-black text-xl">{telemetry.behavior.last_active_avg_days} <span className="text-slate-400 text-sm">Days</span></span>
               </div>
             </div>
 
-            {/* Transactional Timeline */}
-            <div className="bg-white border border-slate-200 p-8 rounded-[32px] shadow-sm hover:shadow-lg transition-shadow duration-300">
-              <h3 className="text-xl font-bold text-slate-900 mb-8">Transactional Health & Capital Frictions</h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
-                 {[
-                   { l: 'Avg Order Value', v: telemetry.transaction.kpis.avg_order_value },
-                   { l: 'Total Refunds', v: telemetry.transaction.kpis.total_refunds },
-                   { l: 'Payment Fails', v: telemetry.transaction.kpis.payment_failure_rate },
-                   { l: 'Purchase Freq', v: telemetry.transaction.kpis.purchase_frequency },
-                   { l: 'Days Since Order', v: telemetry.transaction.kpis.days_since_purchase },
-                   { l: 'Sub Renewal', v: telemetry.transaction.kpis.subscription_renewal },
-                 ].map((k, i) => (
-                    <div key={i} className="bg-slate-50 p-4 rounded-xl border border-slate-100 shadow-sm flex flex-col justify-center">
-                       <p className="text-slate-500 text-[10px] uppercase font-bold tracking-widest mb-1.5">{k.l}</p>
-                       <p className="text-slate-900 font-black text-xl">{k.v}</p>
+            {/* 2. Customer Sentiment & Frictions */}
+            <div className="bg-slate-900 border border-slate-800 p-8 rounded-[32px] shadow-lg relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-rose-500 opacity-10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2 group-hover:scale-150 transition-transform duration-1000" />
+              <div className="absolute bottom-0 left-0 w-64 h-64 bg-indigo-500 opacity-10 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2 group-hover:scale-150 transition-transform duration-1000" />
+              
+              <h3 className="text-xl font-bold text-white mb-8 relative z-10 flex justify-between">Sentiment Topography <span className="text-slate-400 text-xs mt-1 uppercase">Critical Frictions</span></h3>
+              
+              <div className="space-y-6 relative z-10">
+                 <div className="bg-slate-800/50 p-5 rounded-2xl border border-slate-700 backdrop-blur-sm shadow-inner">
+                    <div className="flex justify-between items-end mb-2">
+                       <span className="text-slate-400 font-bold text-[10px] uppercase tracking-widest">Net Promoter Score (NPS)</span>
+                       <span className="text-emerald-400 font-black text-2xl">{telemetry.sentiment.nps_score}<span className="text-slate-500 text-sm">/10</span></span>
                     </div>
-                 ))}
+                    <div className="h-2 bg-slate-700/50 rounded-full overflow-hidden">
+                       <div className="h-full bg-emerald-400 rounded-full shadow-[0_0_10px_rgba(52,211,153,0.5)]" style={{width: `${(telemetry.sentiment.nps_score/10)*100}%`}} />
+                    </div>
+                 </div>
+
+                 <div className="grid grid-cols-2 gap-4">
+                    <div className="bg-slate-800/50 p-5 rounded-2xl border border-rose-900/40 backdrop-blur-sm border-l-4 border-l-rose-500 flex flex-col justify-center shadow-md shadow-rose-900/10 hover:shadow-rose-900/20 transition-all">
+                       <span className="text-rose-400/90 font-bold text-[10px] uppercase tracking-wider block mb-1">Rage Clicks (Avg)</span>
+                       <span className="text-white font-black text-3xl">{telemetry.sentiment.rage_clicks_avg}</span>
+                    </div>
+                    <div className="bg-slate-800/50 p-5 rounded-2xl border border-amber-900/40 backdrop-blur-sm border-l-4 border-l-amber-500 flex flex-col justify-center shadow-md shadow-amber-900/10 hover:shadow-amber-900/20 transition-all">
+                       <span className="text-amber-400/90 font-bold text-[10px] uppercase tracking-wider block mb-1">Session Bounce</span>
+                       <span className="text-white font-black text-3xl">{telemetry.sentiment.bounce_rate_avg}</span>
+                    </div>
+                 </div>
+                 
+                 <div className="bg-slate-800/50 p-5 rounded-2xl border border-slate-700 flex justify-between items-center shadow-inner">
+                    <span className="text-slate-400 font-bold text-[10px] uppercase tracking-widest">Customer Satisfaction (CSAT)</span>
+                    <span className="text-indigo-400 font-black text-2xl tracking-tight">{telemetry.sentiment.csat_score}</span>
+                 </div>
               </div>
-              <div className="h-[240px]">
+            </div>
+
+            {/* 3. Transactional Capital */}
+            <div className="bg-white border border-slate-200 p-8 rounded-[32px] shadow-sm hover:shadow-lg transition-shadow duration-300">
+              <h3 className="text-xl font-bold text-slate-900 mb-6 flex justify-between">Capital Liquidity <span className="text-slate-400 text-xs mt-1 uppercase">Metrics</span></h3>
+              <div className="grid grid-cols-2 gap-3 mb-6">
+                 <div className="bg-emerald-50 rounded-2xl p-4 border border-emerald-100 flex flex-col justify-center transition-colors hover:bg-emerald-100/50">
+                    <span className="text-emerald-700 font-bold text-[9px] uppercase tracking-widest block mb-1">Lifetime Value (Avg)</span>
+                    <span className="text-slate-900 font-black text-lg truncate" title={telemetry.transaction.kpis.lifetime_value}>{telemetry.transaction.kpis.lifetime_value}</span>
+                 </div>
+                 <div className="bg-indigo-50 rounded-2xl p-4 border border-indigo-100 flex flex-col justify-center transition-colors hover:bg-indigo-100/50">
+                    <span className="text-indigo-700 font-bold text-[9px] uppercase tracking-widest block mb-1">Monthly MRR Base</span>
+                    <span className="text-slate-900 font-black text-lg truncate" title={telemetry.transaction.kpis.monthly_mrr}>{telemetry.transaction.kpis.monthly_mrr}</span>
+                 </div>
+              </div>
+              
+              <div className="h-[150px] mb-4">
                 <ResponsiveContainer width="100%" height="100%">
-                  <ComposedChart data={telemetry.transaction.timeline} margin={{ top: 0, right: 0, left: -20, bottom: 0 }}>
-                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
-                    <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{fill: '#64748b', fontSize: 13, fontWeight: 600}} dy={15} />
-                    <YAxis axisLine={false} tickLine={false} tick={{fill: '#64748b', fontSize: 12, fontWeight: 500}} dx={-5} />
-                    <Tooltip contentStyle={{ borderRadius: '16px', border: '1px solid #e2e8f0', boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)' }} itemStyle={{fontWeight: 700}}/>
-                    <Legend verticalAlign="top" height={36} iconType="square" wrapperStyle={{ fontSize: '13px', fontWeight: 600, paddingBottom: '16px' }}/>
-                    <Bar dataKey="purchases" barSize={36} fill="#3b82f6" name="Total Purchases" radius={[6, 6, 0, 0]} />
-                    <Line type="monotone" dataKey="failures" stroke="#ef4444" strokeWidth={4} name="Payment Failures" activeDot={{r: 8, strokeWidth: 0, fill: '#ef4444'}} dot={{r: 4}} />
-                    <Line type="monotone" dataKey="refunds" stroke="#f59e0b" strokeWidth={4} name="Refunds" activeDot={{r: 8, strokeWidth: 0, fill: '#f59e0b'}} dot={{r: 4}} />
+                  <ComposedChart data={telemetry.transaction.timeline} margin={{ top: 0, right: 0, left: -25, bottom: 0 }}>
+                    <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{fill: '#64748b', fontSize: 10, fontWeight: 700}} dy={5} />
+                    <YAxis yAxisId="left" axisLine={false} tickLine={false} tick={{fill: '#64748b', fontSize: 10}} dx={-5} />
+                    <YAxis yAxisId="right" orientation="right" axisLine={false} tickLine={false} tick={false} />
+                    <Tooltip contentStyle={{ borderRadius: '12px', border: '1px solid #e2e8f0', fontSize: '12px', fontWeight: 600, boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)' }} />
+                    <Bar yAxisId="left" dataKey="mrr" barSize={16} fill="#10b981" name="MRR Yield" radius={[4, 4, 0, 0]} />
+                    <Line yAxisId="right" type="monotone" dataKey="ltv_growth" stroke="#4f46e5" strokeWidth={3} name="LTV Velocity" activeDot={{r: 6}} dot={false} />
                   </ComposedChart>
                 </ResponsiveContainer>
+              </div>
+              
+              <div className="flex justify-between border-t border-slate-100 pt-5">
+                 <div className="text-center w-1/3 border-r border-slate-100">
+                    <span className="block text-slate-400 font-bold text-[9px] uppercase mb-0.5">Discount Dep.</span>
+                    <span className="text-slate-800 font-black text-sm">{telemetry.transaction.kpis.discount_usage}</span>
+                 </div>
+                 <div className="text-center w-1/3 border-r border-slate-100">
+                    <span className="block text-slate-400 font-bold text-[9px] uppercase mb-0.5">Resolution</span>
+                    <span className="text-slate-800 font-black text-sm truncate" title={telemetry.transaction.kpis.avg_resolution}>{telemetry.transaction.kpis.avg_resolution}</span>
+                 </div>
+                 <div className="text-center w-1/3">
+                    <span className="block text-slate-400 font-bold text-[9px] uppercase mb-0.5">Tickets</span>
+                    <span className="text-slate-800 font-black text-sm">{telemetry.transaction.kpis.support_tickets}</span>
+                 </div>
               </div>
             </div>
           </div>

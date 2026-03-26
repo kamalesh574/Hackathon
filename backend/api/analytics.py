@@ -92,35 +92,68 @@ def get_revenue_at_risk(db: Session = Depends(get_db)):
 
 @router.get("/deep-telemetry")
 def get_deep_telemetry(db: Session = Depends(get_db)):
-    # Provide highly advanced aggregated data for the new Dashboard Behavior & Transaction panels
+    from sqlalchemy import func
+    from backend.models.db_models import Customer
+    
+    # 1. Behavioral Aggregates
+    c = db.query(
+        func.avg(Customer.login_frequency),
+        func.avg(Customer.session_duration),
+        func.avg(Customer.app_visits),
+        func.avg(Customer.pages_viewed),
+        func.avg(Customer.feature_usage_score),
+        func.avg(Customer.scroll_depth),
+        func.avg(Customer.bounce_rate),
+        func.avg(Customer.rage_clicks),
+        func.avg(Customer.idle_time),
+        func.avg(Customer.feature_adoption_rate),
+        func.avg(Customer.nps_score),
+        func.avg(Customer.csat_score),
+        func.avg(Customer.lifetime_value),
+        func.avg(Customer.monthly_recurring_revenue),
+        func.avg(Customer.discount_usage_frequency),
+        func.avg(Customer.support_tickets),
+        func.avg(Customer.avg_resolution_time)
+    ).first()
+    
+    c = [val if val is not None else 0.0 for val in c]
+    
+    # Financial Timeline (Mock trend based on averages)
+    mrr_base = float(c[13])
+    refunds_base = int(c[15])
+    
     return {
         "behavior": {
             "radar": [
-                {"subject": "Login Frequency", "A": 85, "fullMark": 100},
-                {"subject": "Session Duration", "A": 65, "fullMark": 100},
-                {"subject": "App Visits", "A": 90, "fullMark": 100},
-                {"subject": "Pages Viewed", "A": 70, "fullMark": 100},
-                {"subject": "Cart Activity", "A": 55, "fullMark": 100},
-                {"subject": "Click Patterns", "A": 80, "fullMark": 100},
-                {"subject": "Email Open Rate", "A": 45, "fullMark": 100},
-                {"subject": "Feature Usage", "A": 75, "fullMark": 100}
+                {"subject": "App Visits", "A": min(100, int(c[2] * 2)), "fullMark": 100},
+                {"subject": "Session Dropoff", "A": int(c[6]*100), "fullMark": 100},
+                {"subject": "Feature Adopt", "A": int(c[9]*100), "fullMark": 100},
+                {"subject": "Scroll Depth", "A": int(c[5]*100), "fullMark": 100},
+                {"subject": "Rage Clicks", "A": min(100, int(c[7] * 10)), "fullMark": 100},
+                {"subject": "Idle Time", "A": min(100, int(c[8] / 10)), "fullMark": 100}
             ],
             "last_active_avg_days": 4.2
         },
         "transaction": {
             "timeline": [
-                {"name": "Week 1", "purchases": 120, "failures": 12, "refunds": 4},
-                {"name": "Week 2", "purchases": 132, "failures": 10, "refunds": 5},
-                {"name": "Week 3", "purchases": 101, "failures": 18, "refunds": 7},
-                {"name": "Week 4", "purchases": 145, "failures": 8, "refunds": 2}
+                {"name": "Week 1", "mrr": mrr_base*0.8, "ltv_growth": mrr_base*2, "refunds": refunds_base},
+                {"name": "Week 2", "mrr": mrr_base*0.9, "ltv_growth": mrr_base*2.1, "refunds": int(refunds_base*1.2)},
+                {"name": "Week 3", "mrr": mrr_base, "ltv_growth": mrr_base*2.2, "refunds": int(refunds_base*0.8)},
+                {"name": "Week 4", "mrr": mrr_base*1.1, "ltv_growth": mrr_base*2.4, "refunds": int(refunds_base*1.5)}
             ],
             "kpis": {
-                "avg_order_value": "₹4,250",
-                "total_refunds": 18,
-                "payment_failure_rate": "6.5%",
-                "purchase_frequency": "1.2/mo",
-                "days_since_purchase": 14,
-                "subscription_renewal": "88%"
+                "avg_order_value": f"₹{int(c[12]/(c[2]+1)):,}",
+                "lifetime_value": f"₹{int(c[12]):,}",
+                "monthly_mrr": f"₹{int(c[13]):,}",
+                "discount_usage": f"{int(c[14]*100)}%",
+                "support_tickets": int(c[15]),
+                "avg_resolution": f"{int(c[16])} mins"
             }
+        },
+        "sentiment": {
+            "nps_score": round(c[10], 1),
+            "csat_score": f"{int(c[11]*100)}%",
+            "rage_clicks_avg": int(c[7]),
+            "bounce_rate_avg": f"{int(c[6]*100)}%"
         }
     }
