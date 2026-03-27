@@ -39,10 +39,10 @@ class EmailRequest(BaseModel):
 @app.post("/send-email")
 def send_email(data: EmailRequest):
     # ! IMPORTANT: Replace with your actual Gmail and App Password for your live demo!
-    sender_email = "YOUR_GMAIL_HERE@gmail.com"
-    app_password = "YOUR_APP_PASSWORD_HERE"  
+    sender_email = "kamal574.dev@gmail.com"
+    app_password = "pnsh uccu dupu ttmx"  
     
-    if sender_email == "YOUR_GMAIL_HERE@gmail.com":
+    if sender_email == "kamal574.dev@gmail.com":
         return {"status": "Mock success. Please replace sender_email and app_password in main.py."}
 
     subject = "Important: We Value You ❤️"

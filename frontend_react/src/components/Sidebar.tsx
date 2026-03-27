@@ -18,7 +18,6 @@ const Sidebar = () => {
     { icon: User, label: 'Customer 360', path: '/customer-360' },
     { icon: BarChart3, label: 'Feature Insights', path: '/insights' },
     { icon: Target, label: 'Campaign Simulator', path: '/simulator' },
-    { icon: Bell, label: 'Alerts Center', path: '/alerts' },
     { icon: FileText, label: 'Reports', path: '/reports' },
     { icon: Settings, label: 'Settings', path: '/settings' },
   ];

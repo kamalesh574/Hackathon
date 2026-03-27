@@ -24,7 +24,6 @@ function App() {
             <Route path="/customer-360" element={<Customer360 />} />
             <Route path="/insights" element={<FeatureInsights />} />
             <Route path="/simulator" element={<Simulator />} />
-            <Route path="/alerts" element={<Alerts />} />
             <Route path="/reports" element={<Reports />} />
             <Route path="/settings" element={<SettingsPage />} />
             <Route path="/settings" element={<SettingsPage />} />
