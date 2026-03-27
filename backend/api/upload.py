@@ -46,6 +46,10 @@ async def upload_customers(file: UploadFile = File(...), db: Session = Depends(g
                         val = float(val)
                     kwargs[col] = val
                     
+            # Map 'name' alias if 'customer_name' is missing
+            if "customer_name" not in kwargs and "name" in row and pd.notna(row["name"]):
+                kwargs["customer_name"] = str(row["name"])
+
             if "customer_id" not in kwargs:
                 kwargs["customer_id"] = customer_id
                     
