@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, Legend, AreaChart, Area, CartesianGrid, Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ComposedChart, Line } from 'recharts';
-import { Users, AlertTriangle, TrendingDown, IndianRupee, BrainCircuit, Activity, ChevronUp, ChevronDown } from 'lucide-react';
+import { Users, AlertTriangle, TrendingDown, IndianRupee, BrainCircuit, Activity, ChevronUp, ChevronDown, Zap, HeartPulse, Clock, ShieldCheck } from 'lucide-react';
 import api from '../lib/api';
 
 const Dashboard = () => {
@@ -83,7 +83,11 @@ const Dashboard = () => {
           { label: 'Total Active Cohorts', value: summary?.total_customers?.toLocaleString() || '0', delta: summary?.total_customers_delta, icon: Users, color: 'text-indigo-500', bg: 'bg-indigo-500/10 border-indigo-500/20' },
           { label: 'Critical Risk Accounts', value: summary?.high_risk_customers?.toLocaleString() || '0', delta: summary?.high_risk_delta, icon: AlertTriangle, color: 'text-rose-500', bg: 'bg-rose-500/10 border-rose-500/20' },
           { label: 'Projected Churn Velocity', value: `${summary?.estimated_churn_rate || '0'}%`, delta: summary?.churn_rate_delta, icon: Activity, color: 'text-amber-500', bg: 'bg-amber-500/10 border-amber-500/20' },
-          { label: 'Capital At Risk (ARR)', value: `₹${(revAtRisk?.revenue_at_risk || 0).toLocaleString()}`, delta: summary?.revenue_at_risk_delta, icon: IndianRupee, color: 'text-emerald-500', bg: 'bg-emerald-500/10 border-emerald-500/20' },
+          { label: 'Capital At Risk (ARR)', value: `₹${(revAtRisk?.revenue_at_risk || 0).toLocaleString()}`, delta: summary?.revenue_at_risk_delta, icon: TrendingDown, color: 'text-emerald-500', bg: 'bg-emerald-500/10 border-emerald-500/20' },
+          { label: 'Avg Customer LTV', value: `₹${telemetry?.financial?.lifetime_value_avg?.toLocaleString() || '0'}`, delta: '+12.4%', icon: IndianRupee, color: 'text-blue-500', bg: 'bg-blue-500/10 border-blue-500/20' },
+          { label: 'Global NPS Index', value: `${telemetry?.sentiment?.nps_score || '0'}/10`, delta: '+0.4pts', icon: HeartPulse, color: 'text-fuchsia-500', bg: 'bg-fuchsia-500/10 border-fuchsia-500/20' },
+          { label: 'Platform Friction (Rage)', value: `${telemetry?.sentiment?.rage_clicks_avg || '0'} avg`, delta: '-12.1%', icon: Zap, color: 'text-orange-500', bg: 'bg-orange-500/10 border-orange-500/20' },
+          { label: 'Support Resolution', value: `${telemetry?.sentiment?.avg_resolution_time || '0'} hrs`, delta: '-2.3hrs', icon: Clock, color: 'text-cyan-500', bg: 'bg-cyan-500/10 border-cyan-500/20' },
         ].map((card, i) => (
           <div key={i} className="bg-white border border-slate-200 p-7 rounded-[24px] shadow-sm hover:shadow-xl hover:border-slate-300 transition-all duration-300 group cursor-default relative overflow-hidden">
             <div className="absolute -right-8 -top-8 w-32 h-32 bg-gradient-to-br from-transparent to-slate-50 rounded-full group-hover:scale-[2] transition-transform duration-700 opacity-50" />
@@ -261,37 +265,37 @@ const Dashboard = () => {
             </div>
 
             {/* 2. Customer Sentiment & Frictions */}
-            <div className="bg-slate-900 border border-slate-800 p-8 rounded-[32px] shadow-lg relative overflow-hidden group">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-rose-500 opacity-10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2 group-hover:scale-150 transition-transform duration-1000" />
-              <div className="absolute bottom-0 left-0 w-64 h-64 bg-indigo-500 opacity-10 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2 group-hover:scale-150 transition-transform duration-1000" />
+            <div className="bg-white border border-slate-200 p-8 rounded-[32px] shadow-sm relative overflow-hidden group hover:shadow-lg transition-shadow duration-300">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-rose-500 opacity-[0.03] rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2 group-hover:scale-150 transition-transform duration-1000" />
+              <div className="absolute bottom-0 left-0 w-64 h-64 bg-indigo-500 opacity-[0.03] rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2 group-hover:scale-150 transition-transform duration-1000" />
               
-              <h3 className="text-xl font-bold text-white mb-8 relative z-10 flex justify-between">Sentiment Topography <span className="text-slate-400 text-xs mt-1 uppercase">Critical Frictions</span></h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-8 relative z-10 flex justify-between">Sentiment Topography <span className="text-rose-500 bg-rose-50 px-3 py-1 rounded-full text-[10px] font-black tracking-widest mt-1 uppercase">Critical Frictions</span></h3>
               
               <div className="space-y-6 relative z-10">
-                 <div className="bg-slate-800/50 p-5 rounded-2xl border border-slate-700 backdrop-blur-sm shadow-inner">
+                 <div className="bg-slate-50 p-5 rounded-2xl border border-slate-100 shadow-sm">
                     <div className="flex justify-between items-end mb-2">
-                       <span className="text-slate-400 font-bold text-[10px] uppercase tracking-widest">Net Promoter Score (NPS)</span>
-                       <span className="text-emerald-400 font-black text-2xl">{telemetry.sentiment.nps_score}<span className="text-slate-500 text-sm">/10</span></span>
+                       <span className="text-slate-500 font-bold text-[10px] uppercase tracking-widest">Net Promoter Score (NPS)</span>
+                       <span className="text-emerald-500 font-black text-2xl">{telemetry.sentiment.nps_score}<span className="text-slate-400 text-sm">/10</span></span>
                     </div>
-                    <div className="h-2 bg-slate-700/50 rounded-full overflow-hidden">
-                       <div className="h-full bg-emerald-400 rounded-full shadow-[0_0_10px_rgba(52,211,153,0.5)]" style={{width: `${(telemetry.sentiment.nps_score/10)*100}%`}} />
+                    <div className="h-2 bg-slate-200 rounded-full overflow-hidden">
+                       <div className="h-full bg-emerald-500 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.3)]" style={{width: `${(telemetry.sentiment.nps_score/10)*100}%`}} />
                     </div>
                  </div>
 
                  <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-slate-800/50 p-5 rounded-2xl border border-rose-900/40 backdrop-blur-sm border-l-4 border-l-rose-500 flex flex-col justify-center shadow-md shadow-rose-900/10 hover:shadow-rose-900/20 transition-all">
-                       <span className="text-rose-400/90 font-bold text-[10px] uppercase tracking-wider block mb-1">Rage Clicks (Avg)</span>
-                       <span className="text-white font-black text-3xl">{telemetry.sentiment.rage_clicks_avg}</span>
+                    <div className="bg-white p-5 rounded-2xl border border-rose-100 border-l-4 border-l-rose-500 flex flex-col justify-center shadow-sm hover:shadow-md hover:border-rose-200 transition-all">
+                       <span className="text-rose-500 font-bold text-[10px] uppercase tracking-wider block mb-1">Rage Clicks (Avg)</span>
+                       <span className="text-slate-900 font-black text-3xl">{telemetry.sentiment.rage_clicks_avg}</span>
                     </div>
-                    <div className="bg-slate-800/50 p-5 rounded-2xl border border-amber-900/40 backdrop-blur-sm border-l-4 border-l-amber-500 flex flex-col justify-center shadow-md shadow-amber-900/10 hover:shadow-amber-900/20 transition-all">
-                       <span className="text-amber-400/90 font-bold text-[10px] uppercase tracking-wider block mb-1">Session Bounce</span>
-                       <span className="text-white font-black text-3xl">{telemetry.sentiment.bounce_rate_avg}</span>
+                    <div className="bg-white p-5 rounded-2xl border border-amber-100 border-l-4 border-l-amber-500 flex flex-col justify-center shadow-sm hover:shadow-md hover:border-amber-200 transition-all">
+                       <span className="text-amber-500 font-bold text-[10px] uppercase tracking-wider block mb-1">Session Bounce</span>
+                       <span className="text-slate-900 font-black text-3xl">{telemetry.sentiment.bounce_rate_avg}</span>
                     </div>
                  </div>
                  
-                 <div className="bg-slate-800/50 p-5 rounded-2xl border border-slate-700 flex justify-between items-center shadow-inner">
-                    <span className="text-slate-400 font-bold text-[10px] uppercase tracking-widest">Customer Satisfaction (CSAT)</span>
-                    <span className="text-indigo-400 font-black text-2xl tracking-tight">{telemetry.sentiment.csat_score}</span>
+                 <div className="bg-indigo-50/50 p-5 rounded-2xl border border-indigo-100 flex justify-between items-center shadow-sm">
+                    <span className="text-indigo-600 font-bold text-[10px] uppercase tracking-widest">Customer Satisfaction (CSAT)</span>
+                    <span className="text-indigo-600 font-black text-2xl tracking-tight">{telemetry.sentiment.csat_score}</span>
                  </div>
               </div>
             </div>

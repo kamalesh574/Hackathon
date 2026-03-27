@@ -102,18 +102,18 @@ def get_deep_telemetry(db: Session = Depends(get_db)):
         func.avg(Customer.app_visits),
         func.avg(Customer.pages_viewed),
         func.avg(Customer.feature_usage_score),
-        func.avg(Customer.scroll_depth),
+        func.avg(Customer.feature_dropoff_rate), # replacing scroll_depth [5]
         func.avg(Customer.bounce_rate),
         func.avg(Customer.rage_clicks),
         func.avg(Customer.idle_time),
         func.avg(Customer.feature_adoption_rate),
         func.avg(Customer.nps_score),
-        func.avg(Customer.csat_score),
+        func.avg(Customer.rating_given), # replace csat_score [11]
         func.avg(Customer.lifetime_value),
-        func.avg(Customer.monthly_recurring_revenue),
-        func.avg(Customer.discount_usage_frequency),
+        func.avg(Customer.mrr), # replaced monthly_recurring_revenue [13]
+        func.avg(Customer.discount_frequency), # replaced discount_usage [14]
         func.avg(Customer.support_tickets),
-        func.avg(Customer.avg_resolution_time)
+        func.avg(Customer.issue_resolution_time) # replace avg_resolution [16]
     ).first()
     
     c = [val if val is not None else 0.0 for val in c]

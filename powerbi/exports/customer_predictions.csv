@@ -1,101 +1,101 @@
 customer_id,region,plan_type,total_spend,churn_probability,risk_level,priority_score,churn_reasons
-CUST-0001,Asia,Enterprise,3012.3438580767524,0.5294636848838125,Medium risk,0.5940470929462773,Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0002,South America,Pro,879.1270927275638,0.6516285961118937,Medium risk,18.8737091432303,Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0003,North America,Enterprise,3597.31444329082,0.33952403495589,Medium risk,11.343804196315734,Payment friction risk; Subscription expired
-CUST-0004,Asia,Enterprise,860.3015799039283,0.564458322530571,Medium risk,35.902905638335504,Dissatisfaction risk (high refunds); Payment friction risk; Subscription expired
-CUST-0005,Asia,Pro,803.216496621483,0.6474559828004409,Medium risk,36.738677545410084,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0006,South America,Enterprise,194.3711879999748,0.28794713799513344,Low risk,5.94360533938114,Dissatisfaction risk (high refunds)
-CUST-0007,North America,Basic,1914.664433184497,0.6256341665203924,Medium risk,4.927660898720869,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0008,North America,Basic,2281.1224763873347,0.7532075575700999,High risk,75.23922721839705,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0009,Asia,Basic,309.5491257419919,0.6055699610873365,Medium risk,2.6892177690182266,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0010,Europe,Basic,3113.334085945292,0.4353969841466307,Medium risk,2.513629288692669,High inactivity (last login > 30 days)
-CUST-0011,Asia,Basic,1840.490897254709,0.34473517974192375,Medium risk,3.596296714082258,No critical risk factors identified
-CUST-0012,Asia,Basic,2121.341563843941,0.3918301548865449,Medium risk,2.041216977870151,Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0013,Asia,Enterprise,1791.0128504060012,0.4071679659833614,Medium risk,4.550749064322948,Payment friction risk
-CUST-0014,Asia,Basic,1633.0140904575376,0.3975447107427596,Medium risk,15.695847437743737,Dissatisfaction risk (high refunds)
-CUST-0015,South America,Basic,2260.5793086674607,0.5989298292086198,Medium risk,24.129673131888598,High inactivity (last login > 30 days); Payment friction risk; Subscription expired
-CUST-0016,North America,Pro,663.1989714263144,0.35122687696449967,Medium risk,28.41676330012819,Dissatisfaction risk (high refunds)
-CUST-0017,South America,Basic,768.6161154563209,0.22065658341613786,Low risk,0.8114496141751815,Dissatisfaction risk (high refunds)
-CUST-0018,South America,Enterprise,3454.0532030033933,0.3108564138140962,Medium risk,5.797710271909809,Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0019,South America,Basic,3787.1560754278494,0.26026111836357746,Low risk,13.131551938740447,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds)
-CUST-0020,Asia,Enterprise,1524.571799305024,0.717585074392001,High risk,11.468279389385101,High inactivity (last login > 30 days); Payment friction risk
-CUST-0021,Europe,Pro,1119.4414589170374,0.5488502960100364,Medium risk,6.9693686616702655,Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0022,North America,Basic,2593.7981957941124,0.4909372742025389,Medium risk,29.60308885542698,Subscription expired
-CUST-0023,Europe,Basic,1664.4999758374809,0.4552096465698268,Medium risk,2.79363135536038,Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0024,South America,Enterprise,150.2761048583622,0.48772979097388475,Medium risk,16.80187785974784,High inactivity (last login > 30 days); Payment friction risk
-CUST-0025,South America,Pro,666.8027595964519,0.3312025991510383,Medium risk,4.3332524327283926,No critical risk factors identified
-CUST-0026,Europe,Pro,2878.09030394722,0.49472001491247647,Medium risk,2.47656400761679,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Subscription expired
-CUST-0027,Europe,Pro,2652.749570545098,0.43495930384581677,Medium risk,32.5418985052299,Dissatisfaction risk (high refunds); Payment friction risk; Subscription expired
-CUST-0028,Europe,Basic,157.02917038875978,0.4322721309985653,Medium risk,20.7599686004169,High inactivity (last login > 30 days); Subscription expired
-CUST-0029,South America,Basic,926.7900396351504,0.39839704990196745,Medium risk,1.7370793778555846,Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0030,South America,Basic,962.745446522882,0.42869706280194453,Medium risk,0.7246080720638581,Dissatisfaction risk (high refunds); Payment friction risk; Subscription expired
-CUST-0031,North America,Enterprise,2703.9763372149773,0.6248692189310656,Medium risk,1.8842362831828527,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds)
-CUST-0032,North America,Pro,127.8566241297384,0.27913860340129626,Low risk,3.592406571747218,No critical risk factors identified
-CUST-0033,South America,Basic,461.2288988390667,0.6849576749688315,Medium risk,10.466157539667797,Payment friction risk; Subscription expired
-CUST-0034,Europe,Basic,3209.668537224098,0.4933246941087563,Medium risk,10.061851375717696,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Subscription expired
-CUST-0035,Europe,Basic,755.2514151146178,0.3606743171295261,Medium risk,0.773537239178541,Dissatisfaction risk (high refunds); Low engagement duration
-CUST-0036,North America,Basic,2628.347126014905,0.3879500718392476,Medium risk,5.925702804374257,Dissatisfaction risk (high refunds)
-CUST-0037,South America,Pro,990.8219851345698,0.33422667650960824,Medium risk,8.581249876553931,Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0038,North America,Pro,442.7935013994134,0.47804745452125286,Medium risk,32.18567204441986,Dissatisfaction risk (high refunds)
-CUST-0039,North America,Enterprise,1010.5301544478436,0.5191140649602126,Medium risk,1.4172277437248624,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds)
-CUST-0040,Asia,Basic,2902.9543808298536,0.7116078911513892,High risk,20.360674052903704,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0041,Asia,Basic,3430.0010490198288,0.4347238485392569,Medium risk,7.720238864815056,Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0042,Asia,Pro,3329.3684650396167,0.4089199789157433,Medium risk,31.00133499686967,Dissatisfaction risk (high refunds); Subscription expired
-CUST-0043,Europe,Pro,1618.8749419928963,0.5990393678222844,Medium risk,22.67701801934403,Subscription expired
-CUST-0044,South America,Pro,2688.9362894540523,0.3880350947092753,Medium risk,8.972221692854083,Payment friction risk
-CUST-0045,South America,Pro,859.6879668924928,0.7687708156903159,High risk,28.665905445861544,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0046,South America,Basic,1207.9335345310024,0.7035516661850454,High risk,1.4127409754350146,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0047,South America,Pro,3590.526483158423,0.25689318538400563,Low risk,9.90572319112546,Dissatisfaction risk (high refunds)
-CUST-0048,Asia,Basic,101.35759786740736,0.3607639653113572,Medium risk,6.372846891804965,Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0049,Europe,Basic,387.7586968751489,0.36656781716623865,Medium risk,19.282647549377828,Dissatisfaction risk (high refunds)
-CUST-0050,Europe,Basic,871.1507078268079,0.4830823081402676,Medium risk,24.381130801639532,High inactivity (last login > 30 days); Subscription expired
-CUST-0051,Asia,Basic,154.8022053015879,0.4144801432432341,Medium risk,6.115591915838596,Dissatisfaction risk (high refunds); Payment friction risk; Subscription expired
-CUST-0052,Europe,Pro,766.6699686046994,0.43069396358447415,Medium risk,8.566421331931283,Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0053,Asia,Basic,2353.014165830284,0.5595896395144455,Medium risk,0.8539208587542546,Dissatisfaction risk (high refunds); Payment friction risk; Subscription expired
-CUST-0054,South America,Pro,1714.626974840367,0.5875440440491236,Medium risk,19.369254089452497,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0055,Asia,Enterprise,3576.0532587540506,0.4483709718921304,Medium risk,17.05196559022038,Dissatisfaction risk (high refunds); Payment friction risk; Subscription expired
-CUST-0056,South America,Basic,3278.902068866841,0.36319633173338417,Medium risk,8.342815731075223,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds)
-CUST-0057,South America,Basic,1400.17853920661,0.5385433593858445,Medium risk,0.3594243032773295,Dissatisfaction risk (high refunds); Low buying consistency
-CUST-0058,North America,Pro,1074.722562053605,0.5631154955513338,Medium risk,27.91622123759458,Payment friction risk
-CUST-0059,Asia,Basic,1549.7850122607042,0.35136844199302475,Medium risk,21.273313920259014,Dissatisfaction risk (high refunds)
-CUST-0060,North America,Basic,2381.6650229334905,0.2743054785187945,Low risk,7.189550440394079,Dissatisfaction risk (high refunds)
-CUST-0061,Asia,Basic,1108.851381250361,0.2749637404707206,Low risk,6.607248090946946,Dissatisfaction risk (high refunds); Subscription expired
-CUST-0062,Asia,Basic,2515.388186004079,0.6170045497049979,Medium risk,15.51527345749005,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds)
-CUST-0063,North America,Enterprise,1667.1760261553998,0.559544291365599,Medium risk,5.4685971662932555,High inactivity (last login > 30 days); Subscription expired
-CUST-0064,North America,Enterprise,2230.586364365322,0.5190217110178366,Medium risk,43.215085632871705,Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0065,Asia,Pro,1772.6997900845008,0.3026712288956466,Medium risk,12.281906368716264,Dissatisfaction risk (high refunds)
-CUST-0066,Europe,Enterprise,1213.139750190575,0.4712365233829708,Medium risk,8.561324794843362,Payment friction risk
-CUST-0067,South America,Enterprise,3796.390562500519,0.6349696760729929,Medium risk,3.1700758432449883,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0068,North America,Basic,3066.242886931055,0.37937822368134577,Medium risk,7.448852781881079,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds)
-CUST-0069,South America,Enterprise,603.4470442774875,0.6175953117486884,Medium risk,1.2473352074021793,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Low buying consistency
-CUST-0070,Europe,Pro,3480.4485047967555,0.36327957838982977,Medium risk,1.2348864144007339,Dissatisfaction risk (high refunds)
-CUST-0071,Europe,Enterprise,1975.353233085579,0.3060451098240396,Medium risk,1.401536859061108,No critical risk factors identified
-CUST-0072,Europe,Enterprise,3583.481296231661,0.7035807282463921,High risk,0.4538311442501384,High inactivity (last login > 30 days); Payment friction risk; Low buying consistency
-CUST-0073,North America,Basic,3209.428260991895,0.528474063534794,Medium risk,3.587717009310693,Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0074,Europe,Basic,1729.593342653472,0.45971592126238764,Medium risk,7.6839379084559125,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds)
-CUST-0075,North America,Basic,138.75376786446373,0.5192816729923881,Medium risk,6.569386208670508,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0076,Europe,Basic,1111.275569570537,0.40032608931853325,Medium risk,12.654391010976518,Dissatisfaction risk (high refunds); Payment friction risk; Subscription expired
-CUST-0077,South America,Enterprise,2189.4551479104243,0.44348137956807565,Medium risk,6.66880105184564,Dissatisfaction risk (high refunds); Payment friction risk; Subscription expired
-CUST-0078,South America,Enterprise,2552.238968313282,0.6451750713510079,Medium risk,3.6181980912571934,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0079,Asia,Basic,1068.6563574611491,0.3938321106382365,Medium risk,8.395885263593906,Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0080,South America,Pro,600.4564925876554,0.6182852141205594,Medium risk,25.301904562503534,High inactivity (last login > 30 days); Payment friction risk
-CUST-0081,Asia,Basic,3347.9744353572314,0.34048853575716553,Medium risk,1.0054978765665366,Dissatisfaction risk (high refunds); Low buying consistency
-CUST-0082,South America,Basic,3938.388613779031,0.4349533642015989,Medium risk,20.748884903702876,Dissatisfaction risk (high refunds)
-CUST-0083,North America,Basic,2126.476220095609,0.6089082878372599,Medium risk,3.9867926412853807,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0084,South America,Basic,728.1331791007988,0.474685633253125,Medium risk,7.614081183755315,Payment friction risk
-CUST-0085,Asia,Enterprise,1125.6139397515074,0.3091785517904487,Medium risk,5.611099245040692,No critical risk factors identified
-CUST-0086,Asia,Basic,122.6431723624936,0.5172537011911378,Medium risk,4.5591844617812205,High inactivity (last login > 30 days); Subscription expired
-CUST-0087,Europe,Pro,3661.480285913971,0.5085428819968116,Medium risk,27.402047751115564,Dissatisfaction risk (high refunds)
-CUST-0088,North America,Pro,515.1167774160574,0.5275348668790886,Medium risk,17.80226394352096,Dissatisfaction risk (high refunds)
-CUST-0089,South America,Basic,2327.240078281301,0.39187426610640186,Medium risk,1.1831989868791521,Payment friction risk; Low buying consistency
-CUST-0090,Europe,Enterprise,1132.5181217144636,0.5097225700750139,Medium risk,2.3089890599759917,High inactivity (last login > 30 days)
-CUST-0091,South America,Enterprise,2239.003109937384,0.5399213577686071,Medium risk,17.26946592166486,Dissatisfaction risk (high refunds); Payment friction risk; Subscription expired
-CUST-0092,South America,Basic,2623.110533989864,0.6584031630707707,Medium risk,6.346321543879295,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0093,Europe,Basic,3327.4801246434463,0.4130799457679495,Medium risk,21.372613320933866,Dissatisfaction risk (high refunds)
-CUST-0094,Europe,Basic,865.3640234543826,0.6289163878455954,Medium risk,8.779137176767868,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Low engagement duration
-CUST-0095,Europe,Basic,93.43352320099788,0.5085231651019387,Medium risk,2.039906603332063,Dissatisfaction risk (high refunds); Subscription expired
-CUST-0096,Europe,Basic,590.6982387717887,0.28704530770538383,Low risk,0.8239484305623435,Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0097,Europe,Pro,3605.073635300015,0.4320131995191682,Medium risk,0.22985532254641733,Payment friction risk
-CUST-0098,South America,Pro,3501.8658063719354,0.6308700269100889,Medium risk,52.746636264699035,Dissatisfaction risk (high refunds); Payment friction risk; Subscription expired
-CUST-0099,Europe,Basic,2409.7817535727177,0.48464844823677683,Medium risk,1.6831201816199821,High inactivity (last login > 30 days); Dissatisfaction risk (high refunds); Payment friction risk
-CUST-0100,North America,Basic,2422.041598712931,0.40219231477780804,Medium risk,9.32024897339405,Dissatisfaction risk (high refunds); Payment friction risk
+CUST-0001,Coimbatore,Premium,126.76,0.999840677235811,High risk,0.4630998926760758,High application friction (rage clicks); Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment)
+CUST-0002,Coimbatore,Premium,311.03,0.9997501507596503,High risk,0.7336331483027698,High application friction (rage clicks); Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment)
+CUST-0003,Vellore,Basic,238.31,0.9998808004869836,High risk,0.6752091545372573,Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment); Severe navigation drop-off (high bounce rate)
+CUST-0004,Salem,Standard,112.22,0.9995962953471539,High risk,0.4540909511560528,High application friction (rage clicks); Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment)
+CUST-0005,Trichy,Basic,411.07,0.9997286801058838,High risk,0.9599875443626509,High application friction (rage clicks); Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment)
+CUST-0006,Salem,Basic,238.92,0.9984351523139672,High risk,0.721111437851453,Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment); Severe navigation drop-off (high bounce rate)
+CUST-0007,Salem,Basic,433.48,0.9996419448889873,High risk,1.0952139006090988,High application friction (rage clicks); Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment)
+CUST-0008,Chennai,Premium,152.45,0.9997812828019559,High risk,0.43392545772743946,High application friction (rage clicks); Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment)
+CUST-0009,Madurai,Basic,366.35,0.999812409994633,High risk,0.8443247901429244,High application friction (rage clicks); Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment)
+CUST-0010,Tirunelveli,Standard,296.86,0.9999110022358376,High risk,0.716019332483022,High application friction (rage clicks); Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment)
+CUST-0011,Salem,Basic,183.83,0.9998540892366703,High risk,0.5106710866747461,Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment); Severe navigation drop-off (high bounce rate)
+CUST-0012,Vellore,Premium,372.0,0.999271096251058,High risk,0.8483344656415628,Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment); Severe navigation drop-off (high bounce rate)
+CUST-0013,Erode,Basic,109.0,0.9994922049491137,High risk,0.37645242882173663,High application friction (rage clicks); Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment)
+CUST-0014,Coimbatore,Standard,341.34,0.999769487082965,High risk,0.8873396901318618,High application friction (rage clicks); Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment)
+CUST-0015,Erode,Basic,383.66,0.9997298742340055,High risk,0.9464761081045966,High application friction (rage clicks); Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment)
+CUST-0016,Erode,Standard,321.29,0.9998836051715981,High risk,0.8382433685743318,High application friction (rage clicks); Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment)
+CUST-0017,Erode,Standard,254.03,0.9997000703977519,High risk,0.765945715576673,High application friction (rage clicks); Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment)
+CUST-0018,Madurai,Basic,419.29,0.9998602555056573,High risk,1.0049632461471114,Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment); Severe navigation drop-off (high bounce rate)
+CUST-0019,Chennai,Basic,284.89,0.9993331883953196,High risk,0.7411934801017938,High application friction (rage clicks); Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment)
+CUST-0020,Salem,Basic,221.37,0.9992573830741369,High risk,0.6773394282500688,High application friction (rage clicks); Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment)
+CUST-0021,Vellore,Basic,457.82,0.9993529138361884,High risk,1.1588805025403837,Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment); Severe navigation drop-off (high bounce rate)
+CUST-0022,Chennai,Premium,447.89,0.9998819784665157,High risk,1.0091773095108068,High application friction (rage clicks); Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment)
+CUST-0023,Vellore,Standard,300.77,0.999913024657803,High risk,0.7451307647157142,High application friction (rage clicks); Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment)
+CUST-0024,Chennai,Premium,477.09,0.9999423205183634,High risk,1.1070437729399478,High application friction (rage clicks); Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment)
+CUST-0025,Coimbatore,Standard,481.39,0.9994894286922951,High risk,1.1907453851430654,High application friction (rage clicks); Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment)
+CUST-0026,Salem,Basic,298.69,0.9997882941408082,High risk,0.7903161771668915,High application friction (rage clicks); Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment)
+CUST-0027,Tirunelveli,Premium,230.46,0.9996547882395795,High risk,0.6870351025906287,High application friction (rage clicks); Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment)
+CUST-0028,Salem,Standard,229.13,0.9993481511609313,High risk,0.5588013748390357,High application friction (rage clicks); Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment)
+CUST-0029,Madurai,Standard,426.96,0.9995101105291935,High risk,0.9930421287428692,High application friction (rage clicks); Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment)
+CUST-0030,Vellore,Basic,250.16,0.9989146661011982,High risk,0.6160689674982242,High application friction (rage clicks); Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment)
+CUST-0031,Trichy,Premium,2036.01,0.8184280587454412,High risk,6.551386251463386,Purchasing hesitation (high cart abandonment); Recurring payment gateway friction
+CUST-0032,Erode,Basic,2202.36,0.6876560497288365,Medium risk,6.056201586541011,No critical risk factors identified
+CUST-0033,Erode,Standard,2108.93,0.7860326334806637,High risk,6.7006585688445615,Detractor brand sentiment (low NPS); Recurring payment gateway friction
+CUST-0034,Tirunelveli,Premium,2216.36,0.6643779738630762,Medium risk,5.638470149485799,Detractor brand sentiment (low NPS); Negative support interactions (sentiment analysis); Recurring payment gateway friction
+CUST-0035,Trichy,Premium,1522.62,0.6888138846481613,Medium risk,4.438355087034662,Detractor brand sentiment (low NPS)
+CUST-0036,Madurai,Standard,2766.84,0.7221198802475766,High risk,7.684987600977002,Negative support interactions (sentiment analysis); Recurring payment gateway friction
+CUST-0037,Coimbatore,Basic,1781.54,0.6914398606595955,Medium risk,4.95818158303263,Purchasing hesitation (high cart abandonment)
+CUST-0038,Coimbatore,Standard,1667.65,0.7456811997402375,High risk,5.2531358614193575,No critical risk factors identified
+CUST-0039,Chennai,Standard,1035.92,0.7698124107368514,High risk,3.1807166983923656,Negative support interactions (sentiment analysis)
+CUST-0040,Trichy,Standard,1625.91,0.836884874642286,High risk,5.290656685093168,Detractor brand sentiment (low NPS); Recurring payment gateway friction
+CUST-0041,Tirunelveli,Standard,1651.26,0.8573613635280354,High risk,5.830451875526753,Detractor brand sentiment (low NPS); Recurring payment gateway friction
+CUST-0042,Chennai,Premium,2461.57,0.8707450224718102,High risk,8.59254113242373,Purchasing hesitation (high cart abandonment); Recurring payment gateway friction
+CUST-0043,Madurai,Basic,1743.0,0.6643208178127629,Medium risk,4.577333138255862,Detractor brand sentiment (low NPS)
+CUST-0044,Tirunelveli,Standard,2954.88,0.8309187963051706,High risk,9.267702987124158,Negative support interactions (sentiment analysis); Recurring payment gateway friction
+CUST-0045,Chennai,Premium,1460.52,0.7499451209541257,High risk,4.338454815086104,Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment)
+CUST-0046,Erode,Basic,2199.98,0.6985072966806043,Medium risk,5.890156107752187,Detractor brand sentiment (low NPS)
+CUST-0047,Trichy,Standard,2197.13,0.8649935561832436,High risk,7.52960767738455,Negative support interactions (sentiment analysis); Recurring payment gateway friction
+CUST-0048,Salem,Basic,1487.04,0.7193576853959257,High risk,4.160836657762167,Detractor brand sentiment (low NPS)
+CUST-0049,Coimbatore,Premium,2940.87,0.5878290045959854,Medium risk,6.610626800810351,No critical risk factors identified
+CUST-0050,Chennai,Premium,2301.52,0.6556962653471811,Medium risk,5.811732335222237,Purchasing hesitation (high cart abandonment)
+CUST-0051,Tirunelveli,Premium,2510.62,0.7215299482657715,High risk,7.300838988090026,Purchasing hesitation (high cart abandonment)
+CUST-0052,Chennai,Premium,2780.31,0.5603132720535577,Medium risk,6.209756534002136,No critical risk factors identified
+CUST-0053,Tirunelveli,Standard,2689.31,0.7453912248240587,High risk,8.011197335423388,No critical risk factors identified
+CUST-0054,Trichy,Basic,1338.55,0.7546142584452636,High risk,4.25290777217716,No critical risk factors identified
+CUST-0055,Erode,Premium,2599.49,0.7798526563632439,High risk,8.086297695844447,Recurring payment gateway friction
+CUST-0056,Coimbatore,Basic,941.45,0.8060208051173237,High risk,3.242464389078503,Purchasing hesitation (high cart abandonment); Negative support interactions (sentiment analysis); Recurring payment gateway friction
+CUST-0057,Trichy,Standard,2587.9,0.720647371254266,High risk,7.138060211414449,No critical risk factors identified
+CUST-0058,Coimbatore,Standard,856.98,0.8320160930709901,High risk,3.1313267729559717,Purchasing hesitation (high cart abandonment); Recurring payment gateway friction
+CUST-0059,Trichy,Basic,2305.58,0.7096293849168094,High risk,6.6266730417360264,Detractor brand sentiment (low NPS)
+CUST-0060,Tirunelveli,Basic,1586.82,0.7463109450234939,High risk,4.863880914836762,Recurring payment gateway friction
+CUST-0061,Vellore,Premium,2087.82,0.7792037056348884,High risk,6.469262244187503,No critical risk factors identified
+CUST-0062,Salem,Standard,2121.09,0.6869268628345945,Medium risk,5.6819399405650985,Negative support interactions (sentiment analysis)
+CUST-0063,Salem,Basic,2927.7,0.7568922330158631,High risk,8.52878189105529,Negative support interactions (sentiment analysis)
+CUST-0064,Salem,Premium,955.89,0.7599776613920303,High risk,3.2219725323306085,Detractor brand sentiment (low NPS); Negative support interactions (sentiment analysis)
+CUST-0065,Vellore,Premium,2154.72,0.6680450484900464,Medium risk,5.581542598789207,Detractor brand sentiment (low NPS)
+CUST-0066,Trichy,Premium,2555.52,0.791002466243269,High risk,7.785901483097836,Detractor brand sentiment (low NPS); Purchasing hesitation (high cart abandonment); Negative support interactions (sentiment analysis)
+CUST-0067,Tirunelveli,Standard,2472.55,0.7375510187368887,High risk,7.153118617275078,Detractor brand sentiment (low NPS); Negative support interactions (sentiment analysis)
+CUST-0068,Madurai,Basic,1769.92,0.7977222196232696,High risk,5.45937217856704,Detractor brand sentiment (low NPS); Recurring payment gateway friction
+CUST-0069,Vellore,Basic,1530.73,0.8026826280264238,High risk,4.956953162275472,Recurring payment gateway friction
+CUST-0070,Madurai,Basic,1056.57,0.7863603980350562,High risk,3.5679359022418162,Recurring payment gateway friction
+CUST-0071,Salem,Premium,9682.98,0.02451278053076039,Low risk,1.2473310201039014,No critical risk factors identified
+CUST-0072,Chennai,Premium,19595.95,0.025976395230720047,Low risk,2.58035559145999,No critical risk factors identified
+CUST-0073,Chennai,Standard,19348.62,0.021371140077404843,Low risk,2.111341727904654,No critical risk factors identified
+CUST-0074,Vellore,Basic,6964.31,0.025583180645526605,Low risk,0.9321270236294895,No critical risk factors identified
+CUST-0075,Coimbatore,Standard,15813.71,0.01633501028726687,Low risk,1.341566230575136,No critical risk factors identified
+CUST-0076,Madurai,Standard,7877.6,0.022108642074817417,Low risk,0.9120322606869838,No critical risk factors identified
+CUST-0077,Coimbatore,Basic,19978.15,0.021560598476231433,Low risk,2.155068990928708,No critical risk factors identified
+CUST-0078,Trichy,Premium,12693.94,0.01995601578534886,Low risk,1.2833713085452907,No critical risk factors identified
+CUST-0079,Madurai,Standard,16749.84,0.01867613526721349,Low risk,1.6188503028762053,No critical risk factors identified
+CUST-0080,Madurai,Premium,14618.47,0.02807564156132081,Low risk,2.109911487496203,No critical risk factors identified
+CUST-0081,Erode,Standard,19544.58,0.023405250554006773,Low risk,2.3405250554006773,No critical risk factors identified
+CUST-0082,Salem,Basic,18744.65,0.013787792896448398,Low risk,1.331206112995082,No critical risk factors identified
+CUST-0083,Coimbatore,Basic,15731.11,0.023493272779799627,Low risk,1.8909247879183537,No critical risk factors identified
+CUST-0084,Trichy,Premium,7543.36,0.03158357569954726,Low risk,1.2722299865900024,No critical risk factors identified
+CUST-0085,Erode,Premium,10490.95,0.03333876041226403,Low risk,1.7826499468452075,No critical risk factors identified
+CUST-0086,Trichy,Premium,6834.98,0.03059774713420244,Low risk,1.1374146754900243,No critical risk factors identified
+CUST-0087,Tirunelveli,Standard,8828.55,0.027238799007853844,Low risk,1.2395986392208886,No critical risk factors identified
+CUST-0088,Trichy,Standard,8901.24,0.024397463835917874,Low risk,1.1137121717373808,No critical risk factors identified
+CUST-0089,Madurai,Standard,6788.04,0.02531324377414155,Low risk,0.9499500205147144,No critical risk factors identified
+CUST-0090,Coimbatore,Premium,5926.64,0.03193903045201706,Low risk,0.9928348304469619,No critical risk factors identified
+CUST-0091,Chennai,Standard,15221.11,0.022114213770782487,Low risk,1.709732200699736,No critical risk factors identified
+CUST-0092,Trichy,Standard,7832.76,0.03499359177209938,Low risk,1.4520163271687356,No critical risk factors identified
+CUST-0093,Erode,Standard,9502.11,0.032260218962045756,Low risk,1.6130835770223104,No critical risk factors identified
+CUST-0094,Salem,Basic,16802.94,0.03541830215574983,Low risk,3.014166986801494,No critical risk factors identified
+CUST-0095,Erode,Standard,6992.99,0.024219991069872146,Low risk,0.9348813519544825,No critical risk factors identified
+CUST-0096,Chennai,Standard,13483.66,0.011652336980904994,Low risk,0.7926058740630878,No critical risk factors identified
+CUST-0097,Trichy,Basic,12640.92,0.033373515268019315,Low risk,2.1771802796383124,No critical risk factors identified
+CUST-0098,Salem,Standard,10099.07,0.041401664964704724,Low risk,2.1534814167464074,No critical risk factors identified
+CUST-0099,Trichy,Basic,17319.12,0.01572426662619456,Low risk,1.3934049825906274,No critical risk factors identified
+CUST-0100,Madurai,Standard,12523.78,0.023300839762022615,Low risk,1.5410593464955153,No critical risk factors identified
