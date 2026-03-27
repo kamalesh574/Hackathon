@@ -41,9 +41,6 @@ def send_email(data: EmailRequest):
     # ! IMPORTANT: Replace with your actual Gmail and App Password for your live demo!
     sender_email = "kamal574.dev@gmail.com"
     app_password = "pnsh uccu dupu ttmx"  
-    
-    if sender_email == "kamal574.dev@gmail.com":
-        return {"status": "Mock success. Please replace sender_email and app_password in main.py."}
 
     subject = "Important: We Value You ❤️"
     offer = "20% discount" if data.risk > 0.8 else "10% discount"
