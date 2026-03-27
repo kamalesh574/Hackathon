@@ -10,6 +10,7 @@ class Customer(Base):
     
     # Profile & Lifecycle
     customer_name = Column(String, nullable=True)
+    email = Column(String, nullable=True)
     region = Column(String)
     plan_type = Column(String)
     subscription_status = Column(String)

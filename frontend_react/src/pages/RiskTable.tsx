@@ -83,14 +83,7 @@ const RiskTable = () => {
     else setSelectedUsers(new Set(filtered.map(c => c.customer_id)));
   };
 
-  const sendEmail = async (customer: any) => {
-    const getDemoEmail = (name: string) => {
-      if (name.includes("Jayant")) return "jayantmv25@gmail.com";
-      if (name.includes("Jayaprasath")) return "jayaprasath0911@gmail.com";
-      return "testmail@gmail.com";
-    };
-
-    const targetEmail = getDemoEmail(customer.customer_name);
+    const targetEmail = customer.email || "testmail@gmail.com";
 
     const loadingToast = document.createElement('div');
     loadingToast.innerHTML = '<div class="fixed top-4 right-4 bg-slate-900 border border-slate-700 text-white px-6 py-4 rounded-xl shadow-2xl z-[200] font-bold text-sm flex items-center gap-3"><div class="w-4 h-4 border-2 border-primary border-t-transparent rounded-full animate-spin"></div> Dispatching real email to ' + targetEmail + '...</div>';

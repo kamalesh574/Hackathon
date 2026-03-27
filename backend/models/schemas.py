@@ -4,6 +4,7 @@ from datetime import datetime
 
 class CustomerBase(BaseModel):
     customer_id: str
+    email: Optional[str] = None
     region: Optional[str] = None
     plan_type: Optional[str] = None
     subscription_status: Optional[str] = None
